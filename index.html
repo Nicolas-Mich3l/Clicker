@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="left">
+                <h3>Gold: <span class="gold-bank">0</span></h3>
+                <img src="./assets/coin.png" alt="" class="gold-image" onclick="incrementGold()" draggable="false">
+            </div>
+            <div class="right">
+
+                <div class="upgrade" onclick="buyUpgrade()">
+                    <div class="upgrade-left">
+                        <img src="./assets/pointer.png" alt="" class="upgrade-image">
+                    </div>
+                    <div class="upgrade-mid">
+                        <h4>Stronger Fingers</h4>
+                        <div class="upgradeCost-info">
+                            <p>Cost: <span class="upgrade01Cost">10</span></p>
+                            <img src="./assets/coin.png" alt="" class="goldPrice-image" draggable="false">
+                        </div>
+                    </div>
+                    <div class="upgrade-right">
+                        Level <span class="upgrade01level">0</span>
+                    </div>
+                    <div class="upgradeTooltip">
+                        <p>
+                            +<span class="upgrade01TTValue">1</span> gold <br> per click
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyUpgrade()">
+                    <div class="upgrade-left">
+                        <img src="./assets/pointer.png" alt="" class="upgrade-image">
+                    </div>
+                    <div class="upgrade-mid">
+                        <h4>Hired Hands</h4>
+                        <div class="upgradeCost-info">
+                            <p>Cost: <span class="upgrade02Cost">100</span></p>
+                            <img src="./assets/coin.png" alt="" class="goldPrice-image" draggable="false">
+                        </div>
+                    </div>
+                    <div class="upgrade-right">
+                        Level <span class="upgrade02level">0</span>
+                    </div>
+                    <div class="upgradeTooltip">
+                        <p>
+                            +<span class="upgrade02TTValue">5</span> gold <br> per second
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
